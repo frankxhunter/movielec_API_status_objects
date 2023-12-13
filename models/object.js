@@ -10,7 +10,7 @@ export class ObjectModel {
         }
         else if (isavanced !== "true") {
             console.log( filter)
-            return objects.filter(obj => obj.orden === filter)
+            return objects.filter(obj => String(obj.orden )=== filter)
         }
         else {
             const options = {
