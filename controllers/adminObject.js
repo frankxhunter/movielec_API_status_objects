@@ -3,14 +3,16 @@ import { validateObject, validatePartialObject } from '../schema/objectSchema.js
 
 export class ObjectController {
     static async getAll(req, res) {
-        const objects = await ObjectModel.getAll();
+        const {filter, isavanced} = req.params 
+
+        const objects = await ObjectModel.getAll(filter, isavanced);
         res.json(objects);
 
     }
     static async create(req, res) {
         const result = validateObject(req.body)
         if (result.error) {
-            res.json({ error: result.error })
+            res.status(400).json({ error: result.error })
         }
         else {
             const object = await ObjectModel.create(result.data)
@@ -25,7 +27,7 @@ export class ObjectController {
             res.json(object)
         }
         else (
-            res.json({ error: "Object not found" })
+            res.status(404).json({ error: "Object not found" })
         )
     }
     static async update(req, res) {
@@ -38,11 +40,11 @@ export class ObjectController {
                 res.json(object)
             }
             else{
-                res.json({error: "Object not found"})
+                res.status(404).json({error: "Object not found"})
             }
         }
         else {
-            res.json(result.error.message)
+            res.status(400).json(result.error.message)
         }
     }
 }

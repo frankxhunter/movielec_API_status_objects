@@ -2,18 +2,18 @@ import {Router} from 'express'
 import { ObjectController } from '../controllers/adminObject.js';
 import { validatePassword } from '../tools/validations.js';
 
-export const routerAdminObject = Router();
+export const  routerAdminObject = Router();
 
 routerAdminObject.use((req, res, next) => {
     const authorization = req.get('Authorization')
    if(authorization && validatePassword(authorization.split(" ")[1]))
     next();
     else{
-        res.json({error: "Error of the authentication"})
+        res.status(401).json( {error: "Error of the authentication"})
     }
 }) 
 
-routerAdminObject.get('/',ObjectController.getAll);
+routerAdminObject.get('/:filter?/:isavanced?',ObjectController.getAll);
 
 routerAdminObject.post('/', ObjectController.create)
 

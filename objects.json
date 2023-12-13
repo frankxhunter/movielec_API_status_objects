@@ -1,18 +1,92 @@
 [
     {
-        "id": "ef0efjladfj",
-        "orden": "988",
-        "cliente": "Guituierres",
-        "fechaPrevista": "234234234234",
-        "estado": "En proceso",
-        "notas": "El articulo ha presentado mas problemas de los esperedos"       
+      "id": "ef0efjladfj",
+      "numeroTelefonico": "655997557",
+      "orden": "988",
+      "cliente": "Guituierres",
+      "fechaPrevista": "2023-12-24",
+      "estado": "En progreso",
+      "notas": "El articulo ha presentado mas problemas de los esperedos"
     },
     {
-        "id": "1234",
-        "orden": "987",
-        "cliente": "Fernandez",
-        "fechaPrevista": "234234234234",
-        "estado": "Esperando pedidos de materiales",
-        "notas": "El pedido ya esta en camino" 
+      "id": "1234",
+      "numeroTelefonico": "655357527",
+      "orden": "987",
+      "cliente": "Fernandez",
+      "fechaPrevista": "234234234234",
+      "estado": "Esperando pedidos de materiales",
+      "notas": "El pedido ya esta en camino"
+    },
+    {
+      "id": "abcd",
+      "numeroTelefonico": "655123456",
+      "orden": "986",
+      "cliente": "Rodriguez",
+      "fechaPrevista": "234234234234",
+      "estado": "Completado",
+      "notas": "Entrega exitosa"
+    },
+    {
+      "id": "xyzw",
+      "numeroTelefonico": "655789012",
+      "orden": "985",
+      "cliente": "Martinez",
+      "fechaPrevista": "234234234234",
+      "estado": "En espera de confirmación",
+      "notas": "Contactar al cliente para confirmar fecha"
+    },
+    {
+      "id": "ijk1",
+      "numeroTelefonico": "655345678",
+      "orden": "984",
+      "cliente": "Lopez",
+      "fechaPrevista": "234234234234",
+      "estado": "En tránsito",
+      "notas": "Artículo enviado, esperando llegar al destino"
+    },
+    {
+      "id": "mnop",
+      "numeroTelefonico": "655890123",
+      "orden": "983",
+      "cliente": "Gonzalez",
+      "fechaPrevista": "234234234234",
+      "estado": "Pendiente",
+      "notas": "Esperando confirmación de pago"
+    },
+    {
+      "id": "qrst",
+      "numeroTelefonico": "655456789",
+      "orden": "982",
+      "cliente": "Perez",
+      "fechaPrevista": "234234234234",
+      "estado": "En revisión",
+      "notas": "Revisar calidad del artículo"
+    },
+    {
+      "id": "uvw2",
+      "numeroTelefonico": "655012345",
+      "orden": "981",
+      "cliente": "Sanchez",
+      "fechaPrevista": "234234234234",
+      "estado": "Listo para despacho",
+      "notas": "Empacar y enviar"
+    },
+    {
+      "id": "4567",
+      "numeroTelefonico": "655678901",
+      "orden": "980",
+      "cliente": "Ramirez",
+      "fechaPrevista": "234234234234",
+      "estado": "En espera de reparación",
+      "notas": "Artículo dañado, en proceso de reparación"
+    },
+    {
+      "id": "lmno",
+      "numeroTelefonico": "655234567",
+      "orden": "979",
+      "cliente": "Hernandez",
+      "fechaPrevista": "234234234234",
+      "estado": "En revisión de diseño",
+      "notas": "Revisar diseño del artículo"
     }
-]
+  ]

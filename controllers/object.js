@@ -12,5 +12,11 @@ export class ObjectController {
             // Lanzar usuario no valido
         }
     }
+
+    static async getStatus(req, res){
+        const status = await ObjectModel.getStatus();
+        res.json(status)
+
+    }
   
 }
