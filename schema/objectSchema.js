@@ -1,6 +1,6 @@
 import z from 'zod'
 import enumStatus from "../enumStatus.json" assert {type: "json"};
-import { dateToAmericanFormat } from '../tools/validations.js';
+import { dateToAmericanFormat, validateImagen } from '../tools/validations.js';
 
 const status = enumStatus.status
 
@@ -10,6 +10,7 @@ const objectSchema = z.object({
     "cliente": z.string().max(30),
     "fechaPrevista": z.date(),
     "estado":z.enum(status),
+    "imageUrl": z.string(),
     "notas":z.string()
 
 })

@@ -14,3 +14,11 @@ export function dateToAmericanFormat(date){
 
     return `${year}-${month}-${day}`
 }
+
+    
+    export const validateImagen = value => {
+        // Verifica si la cadena es una URL y termina con una extensión de imagen común
+        const urlPattern = /(http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png)/;
+        return urlPattern.test(value);
+      }
+      
